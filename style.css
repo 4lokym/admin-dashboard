@@ -1,8 +1,8 @@
-@import url(josh-comeau-reset.css);
+@import url(./assets/josh-comeau-reset.css);
 
 @font-face{
     font-family: "Rubik";
-    src: url(Rubik-VariableFont_wght.woff2) format("woff2-variations");
+    src: url(./assets/Rubik-VariableFont_wght.woff2) format("woff2-variations");
     font-weight: 300 900;
     font-style: normal;
 }
