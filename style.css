@@ -7,12 +7,27 @@
     font-style: normal;
 }
 
+:root{
+    --main: #06AED5;
+    --main-variation: #086788;
+    --highlight: #F0C808;
+
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+}
+
+img.svg{
+    filter: invert();
+    width: 1rem;
+}
+
+img.svg.dashboard{
+    width: 3rem;
+}
+
 
 body {
-    background-color: black;
     height: 100vh;
-    font-family: Rubik, sans-serif;
-
     display: grid;
     
     grid-template-columns: 1fr 4fr;
@@ -21,7 +36,7 @@ body {
 
 .sidebar{
     grid-area: 1/1/end/2;
-    background-color: blue;
+    background-color: var(--main);
 }
 
 .header{
