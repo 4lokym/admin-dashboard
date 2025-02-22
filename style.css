@@ -2,4 +2,25 @@
 
 body {
     background-color: black;
+    height: 100vh;
+
+    display: grid;
+    
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar{
+    grid-area: 1/1/end/2;
+    background-color: blue;
+}
+
+.header{
+    grid-area: 1/2/2/end;
+    background-color: red;
+}
+
+.main-content{
+    grid-area:2/2/end/end;
+    background-color: green;
 }
