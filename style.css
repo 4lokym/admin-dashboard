@@ -1,8 +1,17 @@
 @import url(josh-comeau-reset.css);
 
+@font-face{
+    font-family: "Rubik";
+    src: url(Rubik-VariableFont_wght.woff2) format("woff2-variations");
+    font-weight: 300 900;
+    font-style: normal;
+}
+
+
 body {
     background-color: black;
     height: 100vh;
+    font-family: Rubik, sans-serif;
 
     display: grid;
     
@@ -19,6 +28,7 @@ body {
     grid-area: 1/2/2/end;
     background-color: red;
 }
+
 
 .main-content{
     grid-area:2/2/end/end;
