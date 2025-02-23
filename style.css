@@ -212,6 +212,13 @@ a{
 
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+
+    .center-content{
+        grid-template-rows: 1/2;
+        display: grid;
+        grid-template-rows: 30px 1fr;
+    }
 
     /* card styling */
 
@@ -220,7 +227,6 @@ a{
         border-radius: 0.5rem;
         background-color: var(--neutral-color);
         box-shadow: rgb(197, 197, 197) 1px 1px 2px 2px;
-        overflow: hidden;
 
         /* inside card content styling */
         display: grid;
@@ -241,8 +247,9 @@ a{
         }
         .card-content{
             grid-area: 2/2/3/end;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             color: rgb(114, 114, 114);
+            overflow: hidden;
         }
 
         .card-actions{  
@@ -271,7 +278,7 @@ a{
             padding: 0.5rem;    
             padding-left: 20px;
         }
-
+        overflow: auto;
     }
 
     .cards{
@@ -279,6 +286,7 @@ a{
         grid-column: 1/2;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
         gap: 1rem;
         padding: 1rem;
         padding-top: 0;
@@ -289,9 +297,8 @@ a{
         grid-column: 2/3;
         display: grid;
         grid-template-rows: 40px 1fr 40px 1fr;
-        gap: 20px;
+        gap: 10px;
         padding: 20px;
-
 
     }
 
