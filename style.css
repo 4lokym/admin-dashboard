@@ -18,6 +18,7 @@
     font-family: Rubik, sans-serif;
     font-size: 20px;
 
+
 }
 
 body {
@@ -148,6 +149,32 @@ a{
             font-size: 1.5rem;
         }
 
+    }
+
+    /* lower part of the heading */
+
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        #profile-picture-main{
+            width: 4rem;
+        }
+
+        .bio{
+            display: flex;
+            flex-direction: column;
+
+            .comment{
+                font-size: 0.7rem;
+                justify-self: end;
+            }
+            .User-name{
+                font-size: 2rem;
+            }
+
+        }
     }
 
 }
