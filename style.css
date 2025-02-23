@@ -103,7 +103,7 @@ a{
 }
 
 .header{
-    min-width: 855px;
+    min-width: 865px;
     grid-area: 1/2/2/end;
 
     display: grid;
@@ -113,7 +113,7 @@ a{
 
     .searchbar{
         display: flex;
-        padding: 1rem;
+        padding: 0.5rem;
         align-items: center;
         gap: 1rem;
 
@@ -180,6 +180,7 @@ a{
                 }
                 .User-name{
                     font-size: 2rem;
+                    font-weight: 500;
                 }
 
             }
@@ -206,5 +207,51 @@ a{
 
 .main-content{
     grid-area:2/2/end/end;
-    background-color: green;
+    background-color: var(--neutral-color2);
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    /* card styling */
+
+    .card{
+        border-radius: 0.5rem;
+        background-color: var(--neutral-color);
+        box-shadow: rgb(197, 197, 197) 1px 1px 2px 2px;
+    }
+
+    .center-content{
+        display: grid;
+        grid-template-rows: 60px;
+
+        .projects{
+            align-self: center;
+            padding: 0.5rem;    
+            padding-left: 20px;
+        }
+
+    }
+
+    .cards{
+        min-width: 660px;
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+        padding-top: 0;
+
+    }
+
+    .side-content{
+        grid-column: 2/3;
+        display: grid;
+        grid-template-rows: 40px 1fr 40px 1fr;
+        gap: 20px;
+        padding: 20px;
+
+
+    }
+
+    
 }
