@@ -176,7 +176,8 @@ a{
 
                 .comment{
                     font-size: 0.7rem;
-                    justify-self: end;
+                    position: relative;
+                    top: 10px;
                 }
                 .User-name{
                     font-size: 2rem;
@@ -215,9 +216,50 @@ a{
     /* card styling */
 
     .card{
+        padding-right: 0.5rem;
         border-radius: 0.5rem;
         background-color: var(--neutral-color);
         box-shadow: rgb(197, 197, 197) 1px 1px 2px 2px;
+        overflow: hidden;
+
+        /* inside card content styling */
+        display: grid;
+        column-gap: 10px;
+        row-gap: 5px;
+        grid-template-columns: 7px 1fr;
+        grid-template-rows: 30px 4fr 1fr;
+
+
+        .side-line{
+            grid-area: 1/1/end/2;
+            background-color: var(--highlight);
+        }
+        .title-card{
+            padding-top: 0.3rem;
+            grid-area: 1/2/2/end;
+            font-weight: 600;
+        }
+        .card-content{
+            grid-area: 2/2/3/end;
+            font-size: 0.8rem;
+            color: rgb(114, 114, 114);
+        }
+
+        .card-actions{  
+            grid-area: 3/2/end/end;
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: right;
+
+            button{
+                height: fit-content;
+                width: fit-content;
+
+            }
+
+        }
+
+
     }
 
     .center-content{
