@@ -12,6 +12,8 @@
     --main-variation: #086788;
     --highlight: #F0C808;
     --text-color: white;
+    --neutral-color: white;
+    --neutral-color2: rgb(204, 204, 204);
 
     font-family: Rubik, sans-serif;
     font-size: 20px;
@@ -40,12 +42,22 @@ a, a:link, a:visited{
 
 /* icons stilyng */
 img.svg{
-    filter: invert();
     width: 1rem;
 }
 
-img.dashboard{
+img.invert{
+    filter: invert();
+}
+
+img.big{
     width: 2rem;
+}
+
+/* button styling */
+
+button.none{
+    border: none;
+    background-color: inherit;
 }
 
 
@@ -85,14 +97,34 @@ a{
     }
 }
 
-
-
-
-
-
 .header{
     grid-area: 1/2/2/end;
     background-color: red;
+
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+
+    .searchbar{
+        background-color: var(--neutral-color);
+        display: flex;
+        padding: 1rem;
+        align-items: center;
+
+        form{
+            display: flex;
+            align-items: center;
+        }
+
+        input{
+            border: none;
+            border-radius: 2rem;
+            height: 1.3rem;
+            padding-left: 1rem;
+            background-color: var(--neutral-color2);
+        }
+
+    }
+
 }
 
 
