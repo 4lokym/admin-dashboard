@@ -103,7 +103,7 @@ a{
 }
 
 .header{
-    min-width: 600px;
+    min-width: 855px;
     grid-area: 1/2/2/end;
 
     display: grid;
@@ -152,29 +152,53 @@ a{
     }
 
     /* lower part of the heading */
+    .actionbar{
 
-    .profile{
+        padding-left: 3rem;
+        padding-right: 3rem;
+
         display: flex;
-        align-items: center;
         gap: 1rem;
+        .profile{
 
-        #profile-picture-main{
-            width: 4rem;
-        }
-
-        .bio{
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-right: auto;
 
-            .comment{
-                font-size: 0.7rem;
-                justify-self: end;
-            }
-            .User-name{
-                font-size: 2rem;
+            #profile-picture-main{
+                width: 4rem;
             }
 
+            .bio{
+                display: flex;
+                flex-direction: column;
+
+                .comment{
+                    font-size: 0.7rem;
+                    justify-self: end;
+                }
+                .User-name{
+                    font-size: 2rem;
+                }
+
+            }
         }
+
+        .actions{
+            align-items: center;
+            display: flex;
+            gap: 1rem;
+            button{
+                padding: 0.5rem 1.5rem;
+                border: none;
+                border-radius: 2rem;
+                background-color: var(--main);
+                box-shadow: var(--neutral-color2) 1px 1px 1px 1px;
+                color: var(--text-color);
+            }
+        }
+
     }
 
 }
